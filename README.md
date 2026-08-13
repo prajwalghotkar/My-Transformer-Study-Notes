@@ -36,8 +36,7 @@
 16. [Resources I Used](#-resources-i-used)
 ---
  
-##  Why This Paper Matters (https://arxiv.org/pdf/1706.03762
-)
+##  Why This Paper Matters https://arxiv.org/pdf/1706.03762
  
 Before this paper (2017), almost every good NLP model was built on **RNNs / LSTMs / GRUs**, optionally combined with attention. This paper asked a bold question:
  
