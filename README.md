@@ -68,7 +68,8 @@ The result was the **Transformer** — the architecture behind BERT, GPT, T5, an
  
 The Transformer follows the classic **Encoder–Decoder** structure, but built entirely from attention + feed-forward layers.
  
-<img width="1440" height="1150" alt="image" src="https://github.com/user-attachments/assets/49e031ca-b541-4283-9b07-9fe9211a4be9" />
+<img width="2720" height="2300" alt="transformer_architecture" src="https://github.com/user-attachments/assets/bf721fab-815a-4f14-96a4-81b9598f8e65" />
+
 
  
 - Encoder: maps input tokens → continuous representations.
