@@ -68,23 +68,8 @@ The result was the **Transformer** — the architecture behind BERT, GPT, T5, an
  
 The Transformer follows the classic **Encoder–Decoder** structure, but built entirely from attention + feed-forward layers.
  
-```
-        INPUT SEQUENCE                          OUTPUT SEQUENCE (shifted right)
-              │                                          │
-    [Input Embedding + Positional Encoding]   [Output Embedding + Positional Encoding]
-              │                                          │
-      ┌───────▼────────┐                        ┌────────▼────────┐
-      │   ENCODER x6    │                        │   DECODER x6     │
-      │ - Self-Attention│───── encoder output ──▶│ - Masked Self-Attn│
-      │ - Feed Forward  │                        │ - Encoder-Decoder Attn
-      │ - Add & Norm    │                        │ - Feed Forward    │
-      └───────┬────────┘                        │ - Add & Norm      │
-              │                                  └────────┬────────┘
-              │                                           │
-              │                                  [Linear + Softmax]
-              │                                           │
-              │                                   Output Probabilities
-```
+<img width="1440" height="1150" alt="image" src="https://github.com/user-attachments/assets/49e031ca-b541-4283-9b07-9fe9211a4be9" />
+
  
 - Encoder: maps input tokens → continuous representations.
 - Decoder: takes encoder output + previously generated tokens → predicts the next token, one at a time (**auto-regressive**).
@@ -247,15 +232,13 @@ lrate = d_model^(-0.5) · min(step^(-0.5), step · warmup_steps^(-1.5))
 -  Parallelization = faster training = the real unlock that made scaling LLMs possible.
 -  This single architecture became the foundation for BERT, GPT, T5, Vision Transformers, and more.
 ---
+
  
- 
----
- 
-## 📚 Resources I Used
+##  Resources I Used
  
 - 📄 Original Paper: *Attention Is All You Need* (Vaswani et al., 2017) — [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)
 - 💻 Official code reference: [tensor2tensor (Google)](https://github.com/tensorflow/tensor2tensor)
-- 🎥 Beginner lecture series on Transformers *(add your specific playlist/course links here)*
+
 ---
  
  
