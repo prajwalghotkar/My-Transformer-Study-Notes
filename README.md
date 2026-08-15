@@ -42,7 +42,7 @@ Before this paper (2017), almost every good NLP model was built on **RNNs / LSTM
  
 > *"What if we throw away recurrence and convolutions completely, and build a model using **only attention**?"*
  
-The result was the **Transformer** — the architecture behind BERT, GPT, T5, and basically every modern LLM (including the one writing this README 😄).
+The result was the **Transformer** — the architecture behind BERT, GPT, T5, and basically every modern LLM .
  
 ---
  
